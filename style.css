@@ -1,0 +1,697 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    background-color: #2f3640;
+  
+}
+.background {
+    width: 100%;
+    
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url('Images/Bentley-R-Type.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-name: change;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 0.8s;
+    
+}
+@keyframes change {
+    20% {background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url('Images/1936-Delahaye-135MS.jpg');}
+    40% {background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url('Images/Austin-Healey-100.jpg');}
+    60% {background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url('Images/Bentley-4½-Litre.jpg');}
+    80% {background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url('Images/Alfa-Romeo-8C-2300.jpg');}
+}
+.main {
+    max-width: 1024px;
+    
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 160px;
+    background-color: black;
+    opacity: 0.5;
+}
+.mainLogo {
+    width: 100px;
+    height: 80px;
+}
+.imageTitle {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.title {
+    
+    color: limegreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.nav-menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link:hover {
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 5px;
+    
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.left {
+    width: 50%;
+    height: 341.33px;
+    overflow: hidden;
+    
+}
+.vintageCar {
+    width: 100%;
+    height: 341.33px;
+}
+.auto {
+    animation: slide 40s linear infinite;
+}
+@keyframes slide {
+    100% {
+        margin-top: calc(-341.33px * 4);
+    }
+}
+
+    
+.right {
+    width: 50%;
+    
+}
+.declaration {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    line-height: 40px;
+}
+h1.declaration{
+    text-align: center;
+    color: #fafafa;
+    margin-bottom: 30px;
+}
+
+.wrapper label {
+    position: relative;
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 15px;
+    display: inline-block;
+    margin: 20px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.wrapper label:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+
+#chkBox {
+    display: none;
+}
+
+.mainContent {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.8s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.box {
+    max-width: 460px;
+    height: 400px;
+    transform: translateY(-900px);
+    transition: all 2s;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+}
+
+.detail-box {
+    padding: 80px 50px;
+}
+
+.detail-box ul li {
+    list-style-type: none;
+    line-height: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.detail-box ul li:hover {
+    color: orangered;
+}
+.close-box {
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+}
+
+.box-close {
+    cursor: pointer;
+}
+
+
+#chkBox:checked + .mainContent{
+    visibility: visible;
+    opacity: 1;
+    z-index: 9999;
+}
+
+#chkBox:checked + .mainContent .box {
+    transform: translateY(50%);
+}
+
+
+.Footer {
+    padding: 50px;
+    background-color: #000000;
+    opacity: 0.5;
+    margin-top: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+.copyright {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.copyright1 {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.copyright1:hover {
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 5px;
+}
+.footerRight {
+    display: flex;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+
+/*Contact*/
+.pages {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+.special {
+    margin: 0;
+    justify-content: space-between;
+}
+.last {
+    margin-top: 5px;
+}
+
+.Container {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.flex {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 341.333px;
+    background-color: gray;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.input {
+    
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+.select {
+    width: 230px;
+}
+.submit {
+    padding: 15px;
+    border-radius: 24px;
+    border: none;
+    background-color: orange;
+    color: black;
+    
+}
+.submit:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+/*About us*/
+.mainAbout {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.textAuto {
+    animation: slide1 20s linear infinite;
+}
+@keyframes slide1 {
+    100% {
+        margin-top: -1035.2px;
+    }
+}
+.Declaration {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bolder;
+    font-size: 80px;
+}
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 40px;
+    margin-left: 85px;
+    
+}
+.getStart {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    background-color: green;
+    color: #ffffff;
+    border-radius: 24px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+
+.getStart:hover {
+    opacity: 0.9;
+}
+
+/*Q&A*/
+.forum_grid {
+    width: 100%;
+    height: 400px;
+    color: black;
+    
+    opacity: 0.7;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-areas: "forum forum forum" "Cat forum1 forum1" "Cat forum2 forum2";
+    grid-gap: 1.5em;
+}
+.Catinner {
+    border: none;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.Catinner:hover {
+    color: blue;
+}
+.inner {
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.grid_one {
+    grid-area: forum;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.grid_two {
+    grid-area: Cat;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+}
+.grid_three {
+    grid-area: forum1;
+    background-color: white;
+    border-radius: 15px;
+}
+.grid_four {
+    grid-area: forum2;
+    background-color: white;
+    border-radius: 15px;
+}
+.searchBox {
+    position: absolute;
+    
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    left: 30px;
+    top: 30px;
+
+}
+
+.searchButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:right;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+.searchBox:hover  .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search {
+    width: 20px;
+    height: 20px;
+}
+
+.customer {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.questionTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.question {
+    margin-left: 30px;
+}
+
+.seen {
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+}
+
+.seenNo {
+    font-size: 12px;
+}
+
+.float {
+    float: right;
+    margin-top: 10px;
+}
+.comment {
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+/*Registration*/
+
+.register {
+    color: white;
+    background-color: tomato;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.Register_left {
+    width: 40%;
+    margin-right: 10%;
+    overflow: visible;
+}
+
+.detail {
+    color: white;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.marginRight {
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    outline: none;
+    width: 200px;
+}
+
+.space {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.address {
+    width: 250px;
+    display: block;
+}
+
+/* Drivers */
+
+
+
+.grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Driver_Container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.Driver {
+    width: 100%;
+    height: 300px;
+    border-radius: 3px;
+}
+
+.Driver_Container:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+.Info {
+    position: absolute;
+    color: white;
+    width: 100%;
+    background-color: rgba(0,0,0,0.75);
+    bottom: 0;
+    padding: 20px;
+}
+
+.Driver_Info {
+    list-style-type: none;
+}
+
+/*For All*/
+@media (max-width:1193px) {
+    .About_left {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .About_right {
+        width: 80%; 
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px){
+    .header {
+        justify-content: center;
+    }
+    .imageTitle {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .nav-menu {
+        flex-direction: column;
+        gap: 2em;
+        width: max-content;
+
+    }
+    .nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .footerLeft {
+        margin: 0 auto;
+    }
+    .footerRight {
+        margin: 0 auto;
+    }
+    .left {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .right {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .box {
+        max-width: 360px;
+        height: 350px;
+    }
+    
+    .detail ul li {
+        margin-bottom: 10px;
+    }
+    
+    .forum_grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 3fr 1fr 1fr;
+        grid-template-areas: "forum" "Cat"  "forum1" "forum2";
+        grid-gap: 0.5em;
+        height: 600px;
+        line-height: 20px;
+        vertical-align: middle;
+    }
+    .searchBox {
+        top: 0;
+        left: 0;
+    }
+    .inner {
+        top: 60px;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:926px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:620px) {
+    .grid {
+        grid-template-columns: 1fr;
+        
+    }
+    .Driver_Container {
+        width: 80%;
+        height: 180px;
+        margin: 0 auto;
+    }
+    .Info {
+        padding: 0;
+    }
+}
+
+@media (max-width:809px) {
+    
+    .content {
+        margin-left: 0;
+    }
+    .getStart {
+        margin-left: 0;
+    }
+}
+@media (max-width:615px) {
+    .contact {
+        width: 80%;
+    }
+}
+
+@media (max-width: 426px) {
+    .inner {
+        top: 50px;
+    }
+}
+
+@media (max-width: 470px) {
+    .Register_left {
+        overflow:visible;
+        margin-bottom: 100px;
+    }
+
+    .full-left {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .Declaration {
+        font-size: 48px;
+    }
+}
